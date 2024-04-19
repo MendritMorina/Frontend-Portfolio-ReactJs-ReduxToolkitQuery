@@ -106,7 +106,7 @@ const AdminContact = () => {
 
   return (
     <div className="sm:overflow-x-scroll sm:w-full">
-      <Table dataSource={dataContacts.map((contact: Contact) => ({...contact, key: contact.id, createdAt: timeConverter(contact.createdAt)}))}
+      <Table dataSource={dataContacts?.map((contact: Contact) => ({...contact, key: contact.id, createdAt: timeConverter(contact.createdAt)}))}
              columns={columns} pagination={false} scroll={{x: 'max-content'}}/>
       {currentModalType && <Modal open={showDeleteModal} title={'Are you sure you want to delete?'} footer={null}
              onCancel={() => {
