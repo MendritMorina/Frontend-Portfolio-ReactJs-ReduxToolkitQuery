@@ -1,6 +1,5 @@
 import {useGetAllProjectsQuery} from "../../redux/api/projectApiSlice";
 import {useState} from "react";
-import ReactImageMagnify from "react-image-magnify"
 
 const Projects = () => {
   const [selectedItemIndex,setSelectedItemIndex] = useState(0)
