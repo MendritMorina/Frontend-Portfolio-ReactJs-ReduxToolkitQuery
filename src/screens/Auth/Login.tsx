@@ -44,14 +44,13 @@ const Login = () => {
         <Link to="/" className='text-white text-3xl font-semibold cursor-pointer'>{`${'<MendritMorina/>'}`}</Link>
       </div>
       <div className="flex">
-        <div className='w-1/2'>
+        <div className="lg:w-1/2 sm:hidden">
           <img
-            src={letterM}
-            alt=""
-            className="xl:block md:hidden sm:hidden"
+              src={letterM}
+              alt="Description of the image"
           />
         </div>
-        <div className='w-1/2'>
+        <div className='lg:w-1/2 sm:w-full'>
           <h1 className="text-2xl font-semibold mb-4 text-center pt-9">Log In</h1>
           <form onSubmit={submitHandler} className='flex justify-center items-center flex-col gap-2'>
             <label
