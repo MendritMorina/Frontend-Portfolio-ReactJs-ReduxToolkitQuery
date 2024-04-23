@@ -9,6 +9,7 @@ import {LogoutOutlined} from "@ant-design/icons";
 import {useDispatch, useSelector} from "react-redux";
 import {logout} from "../../redux/features/auth/authSlice";
 import {useLogoutMutation} from "../../redux/api/userApiSlice";
+import AdminError from "./AdminError";
 
 const Admin = () => {
   const { userInfo } = useSelector((state:any) => state.auth);
@@ -42,6 +43,11 @@ const Admin = () => {
       label: "Contacts",
       key: "5",
       children: <AdminContact />,
+    },
+    {
+      label: "Errors",
+      key: "6",
+      children: <AdminError />,
     },
   ];
 
